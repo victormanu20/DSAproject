@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iz energética renovable de Colombia</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/060fadc959.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-gray-800 font-sans leading-normal tracking-normal mt-12">
+
+<header>
+    <!--Nav-->
+    <nav aria-label="menu nav" class="bg-gray-800 pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
+
+        <div class="flex flex-wrap items-center">
+            <div class="justify-center md:justify-center text-white px-2">
+                <h1 class="text-2xl">Matriz energética Colombia</h1>
+            </div>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="flex flex-col md:flex-row">
+        <nav aria-label="alternative nav">
+            <div class="bg-gray-800 shadow-xl h-20 fixed bottom-0 mt-12 md:relative md:h-screen z-10 w-full md:w-48 content-center">
+
+                <div class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between">
+                    <ul class="list-reset flex flex-row md:flex-col pt-3 md:py-3 px-1 md:px-2 text-center md:text-left">
+                        <li class="mr-3 flex-1">
+                            <a href="#portada" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                                <i class="fas fa-tasks pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">Portada</span>
+                            </a>
+                        </li>
+                        <li class="mr-3 flex-1">
+                            <a href="#descripcion" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-purple-500">
+                                <i class="fa fa-envelope pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">Descripcion</span>
+                            </a>
+                        </li>
+                        <li class="mr-3 flex-1">
+                            <a href="#dashboard" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-blue-600">
+                                <i class="fas fa-chart-area pr-0 md:pr-3 text-blue-600"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="mr-3 flex-1">
+                            <a href="#conclusiones" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-red-500">
+                                <i class="fa fa-wallet pr-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-200 block md:inline-block">Conclusiones</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+        <section>
+            <div id="portada" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+
+                <div class="bg-gray-800 pt-3">
+                    <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+                        <h2 class="font-bold pl-2">Portada</h2>
+                    </div>
+                </div>
+
+                <div class="flex-col p-4">
+                    <p>Integrantes del proyecto:</p>
+                    <ul class="p-4">
+                        <li>César David Llanos Rodríguez</li>
+                        <li>Moisés Uriel Medina Villa</li>
+                        <li>María Alejandra Barrios Buelvas</li>
+                        <li>Victor Manuel Astudillo</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="descripcion" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+
+                <div class="bg-gray-800 pt-3">
+                    <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+                        <h2 class="font-bold pl-2">Descripcion Proyecto</h2>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap p-4">
+                    <p class="p-4 text-justify">
+                        Este conjunto de datos contiene 158 filas por 13 columnas fue realizado por el Ministerio de Minas y Energía, en la cual se encuentran los proyectos de energias renovables especificamente Solar y Eolica que estan distribuidos en Colombia, asi mismo la inversion que fue necesaria para poner en marcha estos proyectos.
+                    </p>
+                    <p class="p-4 text-justify">Este proyecto identifica la capacidad instalada en MW y la energía estimada en kWh/día que generan los proyectos de energía renovable en Colombia. Buscando dar respuesta a las preguntas ¿Cómo está conformada la matriz de energías renovables en Colombia?, y ¿En qué departamentos se produce energías limpias?.
+                    </p>
+                    <p class="p-4 text-justify">
+                        El estudio no contiene comparaciones de las Fuentes No Convencionales de Energía Renovable con las fuentes convencionales que permita identificar cuál ha sido el avance en la incorporación de estas nuevas energías. Una información que podría mejorar el análisis de los datos es la cantidad de equipos instalados. Además de la huella de carbono generada por estos equipos, para hacer un comparativo de cuanto realmente se está disminuyendo las emisiones de CO2 con respecto a fuentes térmicas que son el 30% de la generación de energía en Colombia.
+                    </p>
+                    <p class="p-4 ">
+                        Enlace del conjunto de datos utilizado:
+                        <a href="https://www.datos.gov.co/Minas-y-Energ-a/Meta-FNCER-Incorporar-en-la-matriz-energ-tica-nuev/vy9n-w6hc" class="hover:bg-gray-700 p-2 rounded-lg" target="_blank">ver aqui</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div id="dashboard" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+
+                <div class="bg-gray-800 pt-3">
+                    <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+                        <h2 class="font-bold pl-2">Dashboard</h2>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-green-200 to-green-100 border-b-4 border-green-600 rounded-lg shadow-xl p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase text-gray-600">Total proyectos Eolicos</h2>
+                                    <p class="font-bold text-3xl" id="proyect-eolicos"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase text-gray-600">Total proyectos Solares</h2>
+                                    <p class="font-bold text-3xl" id="proyect-solar"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-yellow-200 to-yellow-100 border-b-4 border-yellow-600 rounded-lg shadow-xl p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase text-gray-600">Inversion Estimada proyectos Eolicos</h2>
+                                    <p class="font-bold text-3xl" id="total-price-eolicos"> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+                    <div class="w-full md:w-1/2 xl:w-1/3 p-6">
+                        <!--Metric Card-->
+                        <div class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-600 rounded-lg shadow-xl p-5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-1 text-right md:text-center">
+                                    <h2 class="font-bold uppercase text-gray-600">Inversion Estimada proyectos Solar</h2>
+                                    <p class="font-bold text-3xl" id="total-price-solar"> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Metric Card-->
+                    </div>
+                        <!--/Metric Card-->
+                </div>
+                <a href="https://datastudio.google.com/s/oVfCSfnlhxE" target="_blank" >
+                    <p class="text-xl p-4 font-bold border-b-4 border-gray-400">Dashboard realizado en Looker Studio</p>
+                    <img src="./assets/dashboard.png" alt="" class="w-50 p-4" >
+                </a>
+                <p class="p-4">Enlace : <a href="https://datastudio.google.com/s/oVfCSfnlhxE" target="_blank" class="hover:bg-gray-700 p-2 rounded-lg"  > Ver aqui </a>
+                </p>
+
+            </div>
+            <div id="conclusiones" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+
+                <div class="bg-gray-800 pt-3">
+                    <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+                        <h2 class="font-bold pl-2">Conclusiones</h2>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap p-4">
+                    <ul>
+                        <li>
+                            <p class="p-4 text-justify">
+                                <i class="fa-solid fa-square-check"></i>                                
+                                Los proyectos de energía Solar tienen una mayor cobertura en comparación con los proyectos eólicos, pero se puede determinar que existe una distribución en cuestión de ubicación de los proyectos, para la Guajira se encuentra el mayor número de proyectos Eólicos y son los que más aportan en cuestión energía kwh/dia producida, en cuestión de los proyectos solares se encuentran distribuidos principalmente en las 3 regiones: Caribe, Andina y pacífica. 
+                            </p>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</main>
+
+
+
+
+<script src="./index.js"> </script>
+
+
+</body>
+
+</html>
